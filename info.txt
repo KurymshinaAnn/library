@@ -1,0 +1,34 @@
+/user
+
+GET /user
+получение данных, возвр массив всех польз
+
+GET /user/:id
+получение юзера по id
+
+POST /user
+создает пользователя
+
+DELETE /user/:id
+
+PUT /user/:id
+редактирование данных
+
+POST /user/:id/book/:book_id
+взятие книги
+
+DELETE /user/:id/book/:book_id
+возврат книги
+
+book.type {
+    id: <number>,
+    name: <string>,
+    author: <string>,
+}
+
+user.type {
+    id: <number>,
+    name: <string>,
+    username: <string>,
+    books: [{book.type}],
+}
